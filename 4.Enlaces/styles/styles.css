@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    width: 80%;
+    height: 400px;
+}
+
+h1{
+    border: 2px double red;
+    margin: 20px;
+    padding: 10px;
+}
+
+.images{
+    border: 1px solid black;
+    image-rendering: pixelated; /*Esta propiedad controla el algoritmo que se utiliza para escalar la imagen */
+    width: 30%;
+    height: 200px;
+    object-fit: scale-down;
+    object-position: top;
+}
+
+#images{
+    border: 2px solid black;
+    width: 20%;
+    height: auto;
+}
+
+table{
+    border: 1px solid #000;
+    border-spacing: 5px;
+    background: rgb(168, 140, 140);
+ }
+
+ th, td{
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;
+    background: #fff;
+    color: #000;
+ }
+
+ caption{
+    padding: 0.3em;
+    color: #fff;
+    background: rgb(37, 23, 23);
+    font-size: 33px;
+ }
+ th {
+    background: rgba(180, 93, 93, 0.719);
+ }
