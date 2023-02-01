@@ -11,10 +11,10 @@ console.log(myH1);
     console.log(formulario[5].value);
 });*/
 
-formulario.addEventListener('submit', (e) => {
+/*formulario.addEventListener('submit', (e) => {
     e.preventDefault();
     console.log(e.target[1].value);
-});
+});*/
 
 
 
