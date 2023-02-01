@@ -9,20 +9,22 @@
 </head>
 <body>
     <h1>Formularios</h1>
-    <form action="" id="form" method="">
+    <form action="./receive.php" id="form" method="post">
         <label for="name">Nombres:</label>
-        <input id="name" name="name" type="text" value="Hola" placeholder="Introduzca su nombre" maxlength="25" minlength="3" pattern="[a-zA-Z]" required title="Error en datos" autofocus="true" autocomplete="off" spellcheck="true" tabindex="1"><br><br>
+        <input id="name" name="name" type="text" value="Hola" placeholder="Introduzca su nombre" maxlength="25" minlength="3" required title="Error en datos" autofocus="true" autocomplete="off" spellcheck="true" tabindex="1"><br><br>
 
         <label for="edad">Edad:</label>
         <input type="number" id="edad" placeholder="Introduzca su edad" min="18" max="65"><br><br>
         <label for="mail">Correo:</label>
         <input type="email" id="mail" placeholder="Introduzca su correo"><br><br>
         <label for="">Contraseña</label>
-        <input type="password" name="pass" id="pass">
+        <input type="password" name="pass" id="pass"><br><br>
         <label for="">Fecha</label>
-        <input type="date" name="fecha" id="fecha" placeholder="Introduzca la fecha">
+        <input type="date" name="fecha" id="fecha" placeholder="Introduzca la fecha"><br><br>
         <label for="">Color</label>
-        <input type="color">
+        <input type="color"><br><br>
+        <label for="">Mes:</label>
+        <input type="month" id="mes" list="datalist"><br><br>
         <datalist id="datalist">
             <option value="Enero"></option>
             <option value="Febrero"></option>
@@ -52,9 +54,11 @@
         <label for="termino">¿Acepta terminos y condiciones?</label>
         <input type="checkbox" name="termino" id="termino"><br><br>
         <input type="button" value="Enviar">
-        <input type="button" value="Enviar">
-        <button id="enviar" type="submit">Enviar</button>
+        <input type="submit" id="envio" value="Enviando...">
+        <button id="enviar" type="submit">Enviar datos</button>
+
     </form>
+    
     <script src="./main.js"></script>
 </body>
 </html>
