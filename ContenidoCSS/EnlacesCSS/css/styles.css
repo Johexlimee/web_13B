@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 95%;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    margin: 1%;
+    font-size: 20px;
+}
+
+.titulo{
+    border: 2px solid burlywood;
+    background-color: darkolivegreen;
+    text-align: right;
+    padding: 5px;
+}
+
+div{
+    border: 2px solid black;
+}
+
+/*Agrupacion de selectores
+
+h2, .seccion, #div1{
+    text-align: right;   
+}*/
+/*
+[class]{
+    background-color: rgb(174, 219, 219);
+}
+
+#div1{
+    background-color: rgb(226, 149, 33);
+}
+
+a[href]{
+    text-align: left;
+    margin-left: 4%;
+    color: rgb(32, 97, 75);
+}
+
+/*Sufijos*/
+/*
+a[href$=".co"]{
+    color: rgba(10, 202, 138, 0.712);
+    padding: 10px;
+
+}
+
+[class^="ca"]{
+    background: fuchsia;
+}*/
+
+/*Hermanos*/
+.seccion ~ div {
+    color: darkcyan;
+    font-size: 15px;
+}
+
+/*Hijos*/
+.container>section{
+    background-color: brown;
+    padding: 15px;
+}
+
+.menu ul li>a {
+    color: khaki;
+}

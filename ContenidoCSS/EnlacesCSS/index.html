@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Estilos y Enlaces</title>
+</head>
+<body>
+    <!--Formas de trabajar con css 
+        1. Etiqueta <style></style>
+        2. Link de stylesheet href="./css"
+        3. Enlace por las propiedades de cada etiqueta (styles="color: white")
+        4. Selector universal *
+        5. Selector por atributo
+        6. Seleccion pos sufijo $
+        7. Seleccion por prefijo ^
+        8. Seleccion de hermanos ~
+        9. Descendencia
+    --> 
+    <style>
+        .seccion{
+            background-color: bisque;
+        }
+    </style>
+    <header>
+        <!--No es buena practica usar estilos en la etiqueta-->
+        <h1 id="h1" class="titulo" style="color:aquamarine">Estilos con CSS</h1>
+        <ul>
+            <li><a href="www.deportes.co">Deportes</a></li>
+            <li><a href="www.animation.com.co">Animacion</a></li>
+            <li><a href="#">Flores</a></li>
+        </ul>
+    </header>
+    <main class="container">
+        <h2>Subtitulo</h2>
+        <section class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#">Pasillos</a></li>
+                    <li><a href="#">Ropa</a></li>
+                    <li><a>Acerca de</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="seccion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum laudantium impedit numquam praesentium amet a blanditiis libero ex minus soluta dolorum vel minima, alias ut explicabo saepe non suscipit nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo illo odit laudantium ut deleniti ullam, quibusdam ex fugiat. Ipsum rem dolore omnis ad tempora iure, laudantium eos similique maxime ipsam!
+        Adipisci ex aliquam quos eligendi, eos rerum unde reprehenderit error alias. Sit enim similique nulla dolore sed, nisi quaerat modi fugiat! Aliquid repellat quae explicabo dignissimos dolorem ipsa, sequi neque.</section>
+        <div id="div1" class="cajas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quisquam dolorum, at est totam molestias autem, officia ipsa illo corporis sit distinctio dignissimos cupiditate rerum. Officiis nisi aut pariatur mollitia.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quisquam dolorum, at est totam molestias autem, officia ipsa illo corporis sit distinctio dignissimos cupiditate rerum. Officiis nisi aut pariatur mollitia.</div>
+        <div class="cajas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quisquam dolorum, at est totam molestias autem, officia ipsa illo corporis sit distinctio dignissimos cupiditate rerum. Officiis nisi aut pariatur mollitia.</div>
+    </main>
+</body>
+</html>
