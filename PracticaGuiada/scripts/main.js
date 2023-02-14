@@ -9,19 +9,20 @@ opt.onchange = function (){
     const op = document.getElementById('opcion').value; 
     if (op === 'profesor'){
         modalAlert("Los datos han cambiado a profesor")
-        document.getElementById('text1').value="Nombres y Apellidos";
-        document.getElementById('text2').value="Profesion";
-        document.getElementById('text3').value="Edad";
+        document.getElementById('text1').value="Nombres y Apellidos:";
+        document.getElementById('text2').value="Profesion:";
+        document.querySelector('text3').value="Edad:";
     } else if (op === 'estudiante'){
         modalAlert("Los datos han cambiado a estudiante")
-        document.getElementById('text1').value="Nombres";
-        document.getElementById('text2').value="Apellidos";
-        document.getElementById('text3').value="Promedio";
+        document.getElementById('text1').value="Nombres:";
+        document.getElementById('text2').value="Apellidos:";
+        document.querySelector('text3').value="Promedio:";
     }
+
 }
 
 /* Generar eventos
-    1. Colocando el metodo en el atributo onlclick, onmouseover, onmouseout de la etiqueta
+    1. Colocando el metodo en el atributo onclick, onmouseover, onmouseout de la etiqueta
 
     const captura = () => {
         console.log('Hizo click');
