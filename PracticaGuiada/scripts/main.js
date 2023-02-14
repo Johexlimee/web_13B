@@ -31,6 +31,7 @@ btnAgregar.onclick = function () {
     if (validateString(name) && validateString(lastName) && op !=0){
         if ((!isNaN(avg)) && (vAvg(avg))){
             addStudent(name,lastName,avg)
+            modalAlert("Se agrego el estudiante")
         } else {
             document.querySelector('#promedio').value="";
             modalAlert("Promedio Invalido");
