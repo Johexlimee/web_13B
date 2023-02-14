@@ -7,11 +7,16 @@ const opt = document.getElementById('opcion');
 
 opt.onchange = function (){
     const op = document.getElementById('opcion').value; 
-    if (op == 'profesor'){
-        modalAlert("Tardes buenas")
+    if (op === 'profesor'){
+        modalAlert("Los datos han cambiado a profesor")
         document.getElementById('text1').value="Nombres y Apellidos";
         document.getElementById('text2').value="Profesion";
         document.getElementById('text3').value="Edad";
+    } else if (op === 'estudiante'){
+        modalAlert("Los datos han cambiado a estudiante")
+        document.getElementById('text1').value="Nombres";
+        document.getElementById('text2').value="Apellidos";
+        document.getElementById('text3').value="Promedio";
     }
 }
 
