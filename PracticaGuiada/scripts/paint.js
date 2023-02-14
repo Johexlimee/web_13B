@@ -1,11 +1,15 @@
 import {checkAvg} from './validate.js'
+
 const cardE = document.getElementById('cardsEstudiantes');
+const cardP = document.getElementById('cardsProfesores');
 const students = [];
+const teachers = [];
 
 const paintCard = (typ) => {
     typ = typ.toUpperCase();
     const fragment = document.createDocumentFragment();
     const templateStudent = document.querySelector('#templateEstudiante').content;
+    const templateTeacher = document.querySelector('#templateProfesor').content;
 
     if (typ === 'ESTUDIANTE') {
         for (let i of students){
@@ -16,10 +20,17 @@ const paintCard = (typ) => {
             cloneTemp.querySelector(`.text-aprobado`).innerHTML = `${checkAvg(i.prom)}`;
             fragment.appendChild(cloneTemp);
         }
-    } else {
-
+    } else if (typ === 'PROFESOR') {
+        for (let i of teachers){
+            const cloneTemp = templateTeacher.cloneNode(true);
+            cloneTemp.querySelector('.title-card').innerHTML = "Datos del <i>Profesor</i>.";
+            cloneTemp.querySelector('.data-card').innerHTML = `NOMBRE y APELLIDOS: ${i.nomApe.toUpperCase()}<br>PROFESION: ${i.prof.toUpperCase()}`;
+            cloneTemp.querySelector('.text-promedio').innerHTML = `EDAD: ${i.age}`;
+            fragment.appendChild(cloneTemp);
+        }
     }
     cardE.appendChild(fragment);
+    cardP.appendChild(fragment);
 };
 
 const addStudent = (name,lastname,avg) => {
@@ -30,6 +41,15 @@ const addStudent = (name,lastname,avg) => {
         prom: avg
     }
     students.push(student);
+}
+
+const addTeacher = (name,lastname,avg) => {
+    let teacher = {
+        nomApe: name,
+        prof: lastname,
+        age: avg
+    }
+    teachers.push(teacher);
 }
 
 const modalAlert = (cad) => {
@@ -51,38 +71,4 @@ const modalAlert = (cad) => {
 
 }
 
-export {paintCard,addStudent,modalAlert}
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/*
-const cardP = document.getElementById('cardsProfesores');
-const teachers = [];
-
-const paintCardP = (typ) => {
-    typ = typ.toUpperCase();
-    const fragment = document.createDocumentFragment();
-    const templateTeachers = document.querySelector('#templateProfesor').content;
-
-    if (typ === 'PROFESOR') {
-        for (let i of teachers){
-            const cloneTemp = templateTeachers.cloneNode(true);
-            cloneTemp.querySelector('.title-card').innerHTML = "Datos del <i>Profesor</i>.";
-            cloneTemp.querySelector('.data-card').innerHTML = `NOMBRE Y APELLIDOS: ${i.nomApe.toUpperCase()} PROFESION: ${i.prof.toUpperCase()}`;
-            cloneTemp.querySelector('.text-promedio').innerHTML = `EDAD ES: ${i.edad}`;
-            fragment.appendChild(cloneTemp);
-        }
-    } else {
-
-    }
-    cardP.appendChild(fragment);
-};
-
-const addTeacher = (nomApe,prof,edad) => {
-    //Objeto literal de JS
-    let student = {
-        nomApe: name,
-        prof: lastname,
-        edad: avg
-    }
-    students.push(student);
-}*/
+export {paintCard,addStudent,addTeacher,modalAlert}

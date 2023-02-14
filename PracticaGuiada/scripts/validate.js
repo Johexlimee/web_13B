@@ -13,4 +13,4 @@ const checkAvg = (value) => {
     return result;
 }
 
-export{validateString, validatevAvg as vAvg, checkAvg}
+export{validateString, validatevAvg as vAvg, checkAvg,}
