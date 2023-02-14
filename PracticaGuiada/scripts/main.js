@@ -11,14 +11,13 @@ opt.onchange = function (){
         modalAlert("Los datos han cambiado a profesor")
         document.getElementById('text1').value="Nombres y Apellidos:";
         document.getElementById('text2').value="Profesion:";
-        document.querySelector('text3').value="Edad:";
+        document.getElementById('text3').value="Edad:";
     } else if (op === 'estudiante'){
         modalAlert("Los datos han cambiado a estudiante")
-        document.getElementById('text1').value="Nombres:";
+        document.getElementById('nombre').value="Nombres:";
         document.getElementById('text2').value="Apellidos:";
-        document.querySelector('text3').value="Promedio:";
+        document.getElementById('text3').value="Promedio:";
     }
-
 }
 
 /* Generar eventos
