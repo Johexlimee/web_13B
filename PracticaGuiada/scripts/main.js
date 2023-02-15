@@ -6,17 +6,17 @@ const btnMostrar = document.getElementById('btnMostrar');
 const opt = document.getElementById('opcion');
 
 opt.onchange = function (){
-    const op = document.getElementById('opcion').value; 
+    var op = document.getElementById('opcion').value; 
     if (op === 'profesor'){
         modalAlert("Los datos han cambiado a profesor")
-        document.getElementById('text1').value="Nombres y Apellidos:";
-        document.getElementById('text2').value="Profesion:";
-        document.getElementById('text3').value="Edad:";
+        document.getElementById('text1').innerText="Nombres y Apellidos:";
+        document.getElementById('text2').innerText="Profesion:";
+        document.getElementById('text3').innerText="Edad:";
     } else if (op === 'estudiante'){
         modalAlert("Los datos han cambiado a estudiante")
-        document.getElementById('nombre').value="Nombres:";
-        document.getElementById('text2').value="Apellidos:";
-        document.getElementById('text3').value="Promedio:";
+        document.getElementById('text1').innerText="Nombres:";
+        document.getElementById('text2').innerText="Apellidos:";
+        document.getElementById('text3').innerText="Promedio:";
     }
 }
 
