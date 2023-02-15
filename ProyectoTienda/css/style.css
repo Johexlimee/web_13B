@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*Acomoda el tamaño de la caja segun el ancho y alto*/
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    top: 0;
+    font-family: 'lora', serif;
+    font-size: 14px;
+}
+/*******************************  Header **************************************/
+.header{
+    background-color: #FFEEEE;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 3px #FFD1DC;
+}
+.header .container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header .logo{
+    color: #FFEEEE;
+    text-align: center;
+    padding: 0.5%;
+    flex-grow: 1;
+}
+.logo img{
+    width: 150px;
+    margin: 0 auto;
+}
+.header .menu{
+    text-align: center;
+    padding: 0.8%;
+    flex-wrap: 8;
+}
+.header .buscador{
+    text-align: center;
+    padding: 0.5%;
+    flex-grow: 1;
+    list-style: none;
+}
+.item>li{
+    display: inline-block;
+    padding: 0% 2%;
+    list-style: none;
+    font-size: 18px;
+}
+.item>li a{
+    color: black;
+    text-decoration: none;
+}
+.item>li :hover{
+    color: #4B4949;
+    font-size: 19px;
+    text-shadow: #FFD1DC 2px 3px;
+}
+.buscarOculto{
+    padding: 0;
+    width: 0;
+    border: none;
+    outline: none;
+    transition: all 0.5s linear;
+}
+.buscarVisible{
+    width: auto;
+    margin-right: 10px;
+    border-radius: 8%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    transition: all 0.5s linear;
+}
+/********************* Seccion principals ****************/
+.container_p h1{
+    width: 40%;
+    padding: 1%;
+    font-size: 55px;
+    font-weight: 600;
+    margin-top: 1%;
+}
+.container_p{
+    width: 100%;
+    background-repeat: no-repeat;
+    /* Escala la imagen pero sin estirarla */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 0.1px;
+    overflow-y: scroll;/*recorta y coloca un scroll en el eje y*/
+    background-image: linear-gradient(50deg,#c3bebec0 10%,#ffd1dca1), url(../images/accessory-gf35d02501_1280.jpg);
+}
+.container_p .offert{
+    width: 90%;
+    font-size: 24px;
+    padding: 1.5%;
+    text-align: justify;
+}
+.main .container_p .container_button{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+}
+.container_button .button_lp{
+    padding: 20px;
+    background-color: #4B4949;
+    border: 1px solid #4B4949;
+    border-radius: 5%;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    /*
+        Propiedad Transicional
+        transition-property: all; o la propiedad
+        transition-duration: 3s;
+        transition-timing-function: linear;
+        transition-delay: 0s;
+    */
+    transition: all 1s ease 0.2s;
+}
