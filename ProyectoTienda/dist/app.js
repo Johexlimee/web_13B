@@ -7,5 +7,8 @@ buscando.addEventListener('click', (e) => {
     if (inputBuscar.classList.contains('buscarOculto')) {
         inputBuscar.classList.remove('buscarOculto');
         inputBuscar.classList.add('buscarVisible');
+    } else if (inputBuscar.classList.contains('buscarVisible')) {
+        inputBuscar.classList.remove('buscarVisible');
+        inputBuscar.classList.add('buscarOculto');
     }
 });
