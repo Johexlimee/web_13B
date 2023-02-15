@@ -5,6 +5,7 @@ const inputBuscar = document.querySelector('#input_buscar');
 
 buscando.addEventListener('click', (e) => {
     if (inputBuscar.classList.contains('buscarOculto')) {
-
+        inputBuscar.classList.remove('buscarOculto');
+        inputBuscar.classList.add('buscarVisible');
     }
 });
