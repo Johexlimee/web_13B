@@ -187,7 +187,7 @@ body {
     cursor: pointer;
 }
 
-.container_history .text_history {
+.container_history .text_history, .text_acerca {
     font-size: 20px;
 }
 
@@ -387,4 +387,42 @@ iframe {
 
 .nets {
     width: 40px;
+}
+@media(max-width:1020px) {
+    .item>li {
+        padding: 0% 1%;
+        list-style: none;
+        font-size: 17px;
+    }
+    .container_p .offert {
+        width: 85%;
+        font-size: 22px;
+        padding: 1.0%;
+    }
+    .container_p h1 {
+        width: 38%;
+        font-size: 50px;
+        font-weight: 500;
+    }
+}
+@media (max-width:886px){
+    .buscarVisible {
+        margin-right: 5px;
+        padding: 8px;
+    }
+    .subTitle {
+        font-size: 32px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding: 8px;
+    }
+    .text_history .text_acerca {
+        font-size: 20px;
+    }
+    .service .subService {
+        font-size: 20px;
+    }
+    .subService > p{
+        font-size: 16px;
+    }
 }
