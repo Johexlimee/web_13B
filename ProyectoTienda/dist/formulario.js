@@ -25,7 +25,7 @@ formulario.addEventListener("change", (e)=> {
     }
     switch (inputId){
         case "names":
-            formValid.nombres = validacion.validNames();
+            formValid.nombres = validacion.validNames(miValue);
             formValid.nombres ? validClass() : inValidClass();
             console.log(Object.values(formValid));
         break;
@@ -41,3 +41,13 @@ formulario.addEventListener("change", (e)=> {
         break;
     }
 });
+//Envio formulario
+btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (validacion.validarForm(formValid) === -1) {
+        alert("Enviando Formulario");
+        console.log(document.getElementById('form'))
+        let datos = new FormData(document.querySelector('#form'));
+        console.log(datos);
+    }
+})

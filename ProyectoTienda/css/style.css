@@ -4,12 +4,14 @@
     /*Acomoda el tamaño de la caja segun el ancho y alto*/
     box-sizing: border-box;
 }
+
 body {
     position: relative;
     top: 0;
     font-family: 'lora', serif;
     font-size: 14px;
 }
+
 /*******************************  Header **************************************/
 .header {
     background-color: #FFEEEE;
@@ -19,6 +21,7 @@ body {
     left: 0;
     box-shadow: 0px 0px 3px #FFD1DC;
 }
+
 .header .container {
     width: 100%;
     height: auto;
@@ -26,16 +29,19 @@ body {
     flex-direction: row;
     align-items: center;
 }
+
 .header .logo {
     color: #FFEEEE;
     text-align: center;
     padding: 0.5%;
     flex-grow: 1;
 }
+
 .logo img {
     width: 150px;
     margin: 0 auto;
 }
+
 .header .menu {
     text-align: center;
     padding: 0.8%;
@@ -279,6 +285,29 @@ body {
     padding: 5px;
 }
 
+.checkPolitica {
+    width: 7%;
+    display: inline-block;
+}
+
+.labelPolitica {
+    width: 70%;
+    display: inline-block;
+}
+
+#checkPolitica {
+    appearance: none;
+    border: 2px solid #FF004E;
+}
+
+#checkPolitica:checked {
+    background-color: #FFD1DC;
+}
+
+#checkPolitica:focus {
+    border-color: #4b4949;
+}
+
 .is-valid {
     background-color: #FFD1DC !important;
     border-bottom: 1px solid #FF004E !important;
@@ -288,7 +317,8 @@ body {
     border-bottom: 5px solid #f81818 !important;
 }
 
-.button_send, .button_clear {
+.button_send,
+.button_clear {
     display: inline;
     width: 30%;
     margin-top: 2%;
