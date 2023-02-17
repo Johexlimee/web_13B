@@ -6,7 +6,7 @@ const btnMostrar = document.getElementById('btnMostrar');
 const opt = document.getElementById('opcion');
 
 opt.onchange = function (){
-    var op = document.getElementById('opcion').value; 
+    let op = document.getElementById('opcion').value; 
     if (op === 'profesor'){
         modalAlert("Los datos han cambiado a profesor")
         document.getElementById('text1').innerText="Nombres y Apellidos:";
